@@ -79,4 +79,73 @@ var product_list = [
     }
 ]
 
-console.log(product_list)
+
+var product = [
+    {
+        product_categories:{
+            // cat_id:[{}]
+            electronics:"trimmer, mobile-phone, laptop, ipads",
+            stationery:"pencil, eraser,sharpner, scale",
+            cloths:"jeans, shirt, t-shirt, hoddie",
+            fruits:"strawberry, apple, mangos, watermalon"
+        }
+    },
+    {
+        product_details:[{
+            prod_id:1,
+            prod_name:"trimmer",
+            product_categories:"electronics",
+            prod_price:1000,
+            prod_desc:"hello, this is from electronics category",
+            prod_image:"trimmer.jpg",
+            order_id:1
+        },{
+            prod_id:2,
+            prod_name:"jeans",
+            product_categories:"cloths",
+            prod_price:1200,
+            prod_desc:"hello, this is from cloths category",
+            prod_image:"jeans.jpg",
+            prod_order_id:2
+        },{
+            prod_id:3,
+            prod_name:"pencil",
+            product_categories:"stationery",
+            prod_desc:"hello, this is from stationery category",
+            prod_image:"pencil.jpg",
+            prod_price:1200,
+            order_id:3
+        }]
+    },
+    {
+        product_order:[{
+            order_id:1,
+            order_date:"11/12/2021",
+            order_quantity:3,
+            order_types:"cash-on-delivery",
+            status:"processing"
+        },{
+            order_id:2,
+            order_date:"11/12/2021",
+            order_quantity:1,
+            order_types:"cash-on-delivery",
+            status:"processing"
+        },
+        {
+            order_id:3,
+            order_date:"11/12/2021",
+            order_quantity:3,
+            order_types:"cash-on-delivery",
+            status:"processing"
+        }]
+    }
+]
+
+// var buyProd = product[0]["product_categories"]["electronics"]
+var buyProd = product
+
+console.log(buyProd)
+
+// console.log(product)
+
+// console.log(product_list)
