@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Class</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: #271a2a;
+        }
+
+        .reg-table__wrapper{
+            background-color: #212437;
+        }
+
+        .reg-table__wrapper label{
+            color: #ebeb99;
+        }
+
+        .reg-table__head tr{
+            background-color: #e68a03;
+            color: #fce53d;
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 reg-table__wrapper">
+                <table cellpadding="4" cellspacing="5">
+                    <!-- <tr cellpadding="2"> -->
+                        <thead class="reg-table__head">
+                            <!-- <tr> -->
+                                <th colspan="5">
+                                    Sign Up
+                                </th>
+                            <!-- </tr> -->
+                        </thead>
+                        <tbody>
+                                <form action="index.html">
+                                <tr>
+                                    <td>
+                                        <label for="first-name" align="right">First Name</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="first-name" id="first-name">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="last-name">Last Name</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="last-name" id="first-name">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="first-name">User Name</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="user-name" id="first-name">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="date">Date of Birth</label>
+                                    </td>
+                                    <td>
+                                        <select name="months-dropdown" id="">
+                                            <option value="jan">Jan</option>
+                                            <option value="feb">Feb</option>
+                                            <option value="march">March</option>
+                                        </select>
+                                    </td>
+                                    
+                                    <td>
+                                        <select name="days-dropdown" id="">
+                                            <option value="day1">1</option>
+                                            <option value="day2">2</option>
+                                            <option value="day3">3</option>
+                                        </select>
+                                    </td>
+    
+                                    <td>
+                                        <select name="years-dropdown" id="">
+                                            <option value="year1997">1997</option>
+                                            <option value="year1998">1998</option>
+                                            <option value="year1999">1999</option>
+                                        </select>
+                                    </td>
+                                </tr>
+    
+                                <tr>
+                                    <td>
+                                        <label for="gender">Gender</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="gender" id="" value="Male"><label>Male</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="gender" id="" value="Female"><label>Female</label>
+                                    </td>
+                                </tr>
+    
+                                <tr>
+                                    <td>
+                                        <label for="country">Country</label>
+                                    </td>
+                                    <td>
+                                        <select name="country-dropdown" id="">
+                                            <option value="ind">India</option>
+                                            <option value="aus">Australia</option>
+                                            <option value="eng">England</option>
+                                        </select>
+                                    </td>
+                                </tr>
+    
+                                <tr>
+                                    <td>
+                                        <label for="email">Email</label>
+                                    </td>   
+                                    <td>
+                                        <input type="email" name="email" id="">
+                                    </td>                             
+                                </tr>
+    
+                                <tr>
+                                    <td>
+                                        <label for="phone">Phone</label>
+                                    </td>   
+                                    <td>
+                                        <input type="phone" name="phone" id="">
+                                    </td>                             
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label for="email">Password</label>
+                                    </td>   
+                                    <td>
+                                        <input type="password" name="pass" id="">
+                                    </td>                             
+                                </tr>
+    
+                                <tr>
+                                    <td>
+                                        <label for="email">Confirm Password</label>
+                                    </td>   
+                                    <td>
+                                        <input type="password" name="c-pass" id="">
+                                    </td>                             
+                                </tr>
+
+                                <tr>
+                                    <td><input type="checkbox"> <label> I agree to the Term of Use </label></td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="0">
+                                        <input type="submit" name="submit" id="" value="submit">
+                                    </td>
+                                    <td colspan="0">
+                                        <input type="button" name="submit" id="" value="cancel">
+                                    </td>
+                                </tr>
+                            </form>
+                            </tbody>
+                    <!-- </tr> -->
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
