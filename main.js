@@ -289,5 +289,5 @@ var student = [
     }
 ]
 
-// var distData = student[0].address[0].area 
+var distData = student[1].address[0].area 
 console.log(student)
