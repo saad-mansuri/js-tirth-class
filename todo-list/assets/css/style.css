@@ -1,0 +1,16 @@
+#todoTable{
+    display: none;
+}
+
+#validationMsg{
+    display: none;
+}
+
+.fall {
+    /* transform: translateY(10rem) rotateZ(20deg); */
+    opacity: 0;
+}
+
+/* .todoHead__display{
+    display: block;
+} */
