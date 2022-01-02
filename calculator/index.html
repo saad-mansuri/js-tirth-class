@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+
+    <form>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h2 class="text-center mt-3">CALCULATOR</h2>
+                <div class="row pt-3">
+                    <div class="col-md-12" style="height: 50px;">
+                        <input type="text" class="form-control" disabled value="" id="resultDisp" placeholder="YOUR RESULT">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="inputNum1" placeholder="Enter value 1">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="inputNum2" placeholder="Enter value 2">
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-3">
+                        <input type="button" class="btn btn-primary form-control" id="btnAddition" value="+">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="button" class="btn btn-primary form-control" id="btnSubtraction" value="-">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="button" class="btn btn-primary form-control" id="btnMultiplication" value="*">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="button" class="btn btn-primary form-control" id="btnDivision" value="/">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>

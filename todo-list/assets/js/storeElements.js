@@ -1,0 +1,11 @@
+var taskTitle = document.getElementById("txtInputTitle")
+var taskDesc = document.getElementById("txtInputdesc")
+var taskSubmit = document.getElementById("btnSubmit")
+var taskDelete = document.getElementById("btnDelete")
+var taskTodotable = document.getElementById("todoTableBody")
+var taskTodohead = document.getElementById("todoTable")
+var validMsg = document.getElementById("validationMsg")
+
+// console.log(taskSubmit)
+taskSubmit.addEventListener("click", btntaskSubmit)
+// taskDelete.addEventListener("click", btntaskDelete)
