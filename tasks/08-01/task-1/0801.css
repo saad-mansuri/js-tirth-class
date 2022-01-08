@@ -1,0 +1,20 @@
+/* body{
+    background-color: red;
+} */
+
+/* #bodyBG{
+    background-color: red;
+} */
+.task0801__col{
+    background-color: 	#D03D56;
+    border-radius: 8px;
+    position: absolute;
+    top: 30%;
+    box-shadow: 10px 10px 10px #ccc;
+}
+.task0801__col-label{
+    color: #ffffff;
+}
+#txtColor{
+    padding: 10px;
+}

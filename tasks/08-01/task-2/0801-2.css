@@ -1,0 +1,40 @@
+/* body{
+    background-color: red;
+} */
+
+/* #bodyBG{
+    background-color: red;
+} */
+.task0801__col{
+    background-color:#e3e0cf;
+    border-radius: 8px;
+    position: absolute;
+    top: 20%;
+    box-shadow: 10px 10px 10px #ccc;
+    
+}
+.task0801__col h3{
+    font-weight: 800;
+}
+.task0801__col input{
+    padding: 12px;
+}
+.task0801__col-label{
+    color: #ffffff;
+}
+.btnSubmit{
+    background-color: #6a6a68;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: normal;
+}
+.btnSubmit:hover{
+    color: #ffffff;
+}
+.btnSubmit:active, .btnSubmit:focus{
+    color: #ffffff;
+    background-color: #6a6a68;
+}
+#txtColor{
+    padding: 10px;
+}
