@@ -1,0 +1,23 @@
+function checkboxValue(event) { // event humara ha dictinary object
+    let ref = event.target.dataset.target
+    ref = document.getElementById(ref)
+    if (this.checked) {
+        ref.className = "toogle"
+        letMycharacter.push(this.value)
+    } else {
+        ref.className = "toogle-remove"
+        let index = letMycharacter.indexOf(this.value)
+        letMycharacter.splice(index, 1)
+    }
+    let arrayToString = join(letMycharacter)
+    // let arrayToString = letMycharacter.join(",")
+    let stringToAray = arrayToString.split(",")
+    // console.log(
+    //     event.target.value,
+    //     this.value,
+    //     document.getElementById(event.target.id).value
+    // )
+}
+checkbox.forEach((v, i) => {
+    v.addEventListener('change', checkboxValue)
+})

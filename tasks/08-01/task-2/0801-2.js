@@ -12,7 +12,7 @@ submitExpense.addEventListener("click", function(){
     var totalExpense_num = parseInt(totalExpense_val)
     var totalPerson_num = parseInt(totalPerson_val)
     if (totalExpense_val == "" && totalPerson_val == "") {
-        totalPay.value = "Please Enter Valid Value"
+        totalPay.value = "Please Enter Value"
     }else{
         var totalpay_amt = totalExpense_num / totalPerson_num
         totalPay.value = totalpay_amt

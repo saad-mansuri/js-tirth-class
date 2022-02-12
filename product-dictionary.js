@@ -141,13 +141,13 @@ var product = [{
     }
 ]
 
-var buyProd = product[1]["product_details"][1]["prod_id"]
+var buyProd = product[1]["product_details"][0]["prod_id"]
 var buyProd1 = product[1]["product_details"][1]["order_id"]
 
 // var buyProd = product[0].product_categories[1]
 
-document.getElementById("printArray").innerHTML = buyProd,
-    document.getElementById("printArray1").innerHTML = buyProd1
+// document.getElementById("printArray").innerHTML += buyProd,
+//     document.getElementById("printArray1").innerHTML += buyProd1
 
 console.log(buyProd, buyProd1)
 

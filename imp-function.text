@@ -1,0 +1,49 @@
+indexOf :-- Finding tha array of the index.
+Array.isArray :-- Find the array is array or not.
+splice :-- Remove value as index wise from array and also can add values as index wise.
+Object.values :-- return value form dictionery and converts as array.
+Object.keys :-- return keys form dictionery and converts as array.
+push :-- used for insert an array.
+shift :-- remove first indec of value from array
+pop :-- remove last index of value from array.
+join :-- Convert Array to string
+Split :-- Convert String to Array
+toString() :- stringVar.toString() this will convert the data into stirng
+parseInt() :-- parseInt(anyVar) this will convert the into integer, (only and only string type of integer)
+includes() :-- Value availble or not in array and its return in boolean(True and False)
+
+const fullDate = new Date() :-- fullDate is the object of date-time function
+getDate :-- here this function is only used with fullDate object for finding the date of the day
+getMonth :-- here this function is only used with fullDate object for finding the Month of the Year
+getYear :-- here this function is only used with fullDate object for finding the Year
+
+
+File Reader 
+fileReader(), readAsDataURL()
+var reader_file = new FileReader() :-- 
+
+setTimeout() :-- work only a time based on given timer.
+var timeout = setTimeout(function(){
+    ...
+},5000)
+clearTimeout(timeout)
+
+
+setInterval() :-- Work as infinit
+//Interval Example
+var i = 1
+var interval = setInterval(function(){
+     console.log("hello my any function or my logic")   
+    if(i == 5){
+    clearInterval(interval)
+    }
+    i ++
+},5000)
+clearInterval(interval)
+
+
+Math.floor() round-down :-- its convert float value into integer, and its not taking after the point. 
+Math.ceil() round-up :-- its gives upcoming value from float
+Math.random() :-- genrate random float value.
+
+toLowerCase() : String to lower case

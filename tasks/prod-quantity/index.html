@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Press Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .td-quantity{
+            width: 100px;
+            border-radius: 0;
+        }
+
+        .plus, .minus{
+            border: 2px solid #ccc;
+            border-left: 0;
+            border-radius: 0;
+        }
+        .quantity-text{
+            border: 2px solid #ccc;
+            border-radius: 0;
+        }
+        .minus{
+            border: 2px solid #ccc;
+            border-right: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <table class="table" id="dispProd">
+                    <tr>
+                        <th>Sr no</th>
+                        <th>Prod Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Jeans</td>
+                        <td class="td-quantity">
+                            <div class="quantity buttons_added d-flex">
+                                <input type="button" value="-" class="minus btn" data-ref="txtQty1" id="btnMinus" data-error="error-msg1">
+                                <input type="number" disabled value="0" class="quantity-text" id="txtQty1">
+                                <input type="button" value="+" class="plus btn" data-ref="txtQty1" id="btnPlus" data-error="error-msg1">
+                            </div>
+                            <p id="error-msg1" style="display: none; color: red; margin-bottom: 0;"></p>
+                        </td>
+                        <td id="qtyPrice">1000</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Tshirt</td>
+                        <td class="td-quantity">
+                            <div class="quantity buttons_added d-flex">
+                                <input type="button" value="-" class="minus btn" data-ref="txtQty2" id="btnMinus">
+                                <input type="number" disabled value="0" class="quantity-text" id="txtQty2">
+                                <input type="button" value="+" class="plus btn" data-ref="txtQty2" id="btnPlus">
+                            </div>
+                        </td>
+                        <td id="qtyPrice">350</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Hoddie</td>
+                        <td class="td-quantity">
+                            <div class="quantity buttons_added d-flex">
+                                <input type="button" value="-" class="minus btn" data-ref="txtQty3" id="btnMinus">
+                                <input type="number" disabled value="0" class="quantity-text" id="txtQty3">
+                                <input type="button" value="+" class="plus btn" data-ref="txtQty3" id="btnPlus">
+                            </div>
+                        </td id="qtyPrice">
+                        <td>500</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" valine="right"><b> Price</b></td>
+                        <td colspan="1" valine="right"><b>3</b></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</body>
+
+</html>

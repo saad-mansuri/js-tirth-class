@@ -80,17 +80,6 @@ console.log(xyz)
 
 // console.log(aa,bb)
 
-
-
-// indexOf :-- Finding tha array of the index.
-// Array.isArray :-- Find the array is array or not.
-// splice :-- Remove value as index wise from array and also can add values as index wise.
-// Object.values :-- return value form dictionery and converts as array.
-// Object.keys :-- return keys form dictionery and converts as array.
-// push :-- used for insert an array.
-// pop :-- remove last index of value from array.
-
-
 var dict = {
     fname: "saad",
     lname: "tirth",

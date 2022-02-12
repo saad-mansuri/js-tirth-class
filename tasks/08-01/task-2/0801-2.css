@@ -5,11 +5,17 @@
 /* #bodyBG{
     background-color: red;
 } */
-.task0801__col{
+.row{
+    height: 100vh;
+    align-items: center;
+}
+.task0801__col {
     background-color:#e3e0cf;
     border-radius: 8px;
-    position: absolute;
-    top: 20%;
+    /* height: 100vh; */
+    /* align-items: center; */
+    /* position: absolute;
+    top: 20%; */
     box-shadow: 10px 10px 10px #ccc;
     
 }
