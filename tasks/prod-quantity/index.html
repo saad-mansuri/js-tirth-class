@@ -5,29 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Key Press Game</title>
+    <title>Add Prod Qty</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <style>
-        .td-quantity{
+        .td-quantity {
             width: 100px;
             border-radius: 0;
         }
 
-        .plus, .minus{
+        .plus,
+        .minus {
             border: 2px solid #ccc;
             border-left: 0;
             border-radius: 0;
         }
-        .quantity-text{
+
+        .quantity-text {
             border: 2px solid #ccc;
             border-radius: 0;
         }
-        .minus{
+
+        .minus {
             border: 2px solid #ccc;
             border-right: 0;
         }
-
     </style>
 </head>
 
@@ -46,45 +48,56 @@
 
                     <tr>
                         <td>1</td>
-                        <td>Jeans</td>
+                        <td>Jeans<br />₹.10,000</td>
                         <td class="td-quantity">
                             <div class="quantity buttons_added d-flex">
-                                <input type="button" value="-" class="minus btn" data-ref="txtQty1" id="btnMinus" data-error="error-msg1">
-                                <input type="number" disabled value="0" class="quantity-text" id="txtQty1">
-                                <input type="button" value="+" class="plus btn" data-ref="txtQty1" id="btnPlus" data-error="error-msg1">
+                                <input type="button" value="-" class="minus btn" data-ref="txtQty1"
+                                    data-price="qtyPrice" id="btnMinus" data-error="error-msg1">
+                                <input type="number" disabled value="0" class="quantity-text text-center" id="txtQty1">
+                                <input type="button" value="+" class="plus btn" data-ref="txtQty1" data-price="qtyPrice"
+                                    id="btnPlus" data-error="error-msg1">
                             </div>
                             <p id="error-msg1" style="display: none; color: red; margin-bottom: 0;"></p>
                         </td>
-                        <td id="qtyPrice">1000</td>
+                        <td id="qtyPrice" value="10000">0</td>
                     </tr>
+
 
                     <tr>
                         <td>2</td>
-                        <td>Tshirt</td>
+                        <td>T-shirt<br/>₹.15,000</td>
                         <td class="td-quantity">
                             <div class="quantity buttons_added d-flex">
-                                <input type="button" value="-" class="minus btn" data-ref="txtQty2" id="btnMinus">
-                                <input type="number" disabled value="0" class="quantity-text" id="txtQty2">
-                                <input type="button" value="+" class="plus btn" data-ref="txtQty2" id="btnPlus">
+                                <input type="button" value="-" class="minus btn" data-ref="txtQty2"
+                                    data-price="qtyPric1" id="btnMinus" data-error="error-msg2">
+                                <input type="number" disabled value="0" class="quantity-text text-center" id="txtQty2">
+                                <input type="button" value="+" class="plus btn" data-ref="txtQty2" data-price="qtyPric1"
+                                    id="btnPlus" data-error="error-msg2">
                             </div>
+                            <p id="error-msg2" style="display: none; color: red; margin-bottom: 0;"></p>
                         </td>
-                        <td id="qtyPrice">350</td>
+                        <td id="qtyPric1" value="15000">0</td>
                     </tr>
+
                     <tr>
                         <td>3</td>
-                        <td>Hoddie</td>
+                        <td>Hoddie<br/>₹.15,000</td>
                         <td class="td-quantity">
                             <div class="quantity buttons_added d-flex">
-                                <input type="button" value="-" class="minus btn" data-ref="txtQty3" id="btnMinus">
-                                <input type="number" disabled value="0" class="quantity-text" id="txtQty3">
-                                <input type="button" value="+" class="plus btn" data-ref="txtQty3" id="btnPlus">
+                                <input type="button" value="-" class="minus btn" data-ref="txtQty3"
+                                    data-price="qtyPric2" id="btnMinus" data-error="error-msg3">
+                                <input type="number" disabled value="0" class="quantity-text text-center" id="txtQty3">
+                                <input type="button" value="+" class="plus btn" data-ref="txtQty3" data-price="qtyPric2"
+                                    id="btnPlus" data-error="error-msg3">
                             </div>
-                        </td id="qtyPrice">
-                        <td>500</td>
+                            <p id="error-msg3" style="display: none; color: red; margin-bottom: 0;"></p>
+                        </td>
+                        <td id="qtyPric2" value="15000">0</td>
                     </tr>
+
                     <tr>
-                        <td colspan="3" valine="right"><b> Price</b></td>
-                        <td colspan="1" valine="right"><b>3</b></td>
+                        <td colspan="3" valine="right"><b> Total Price</b></td>
+                        <td colspan="1" valine="right" value="0" id="total-price">0 </td>
                     </tr>
 
                 </table>

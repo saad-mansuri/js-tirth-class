@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Functions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        #div1{
+            width:100%;
+            height:150px;
+            display:none;
+            background-color:red;
+        }
+
+        #div2{
+            margin-top: 20px;
+            width:100%;
+            height:150px;
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center my-3">
+            <h1>fadeIn and fadeOut Function</h1>
+        </div>  
+        <div class="row justify-content-center">
+            <div class="col-md-3 mt-2">
+                <div class="btn btn-success form-control" id="fadeIN">Click here for FadeIn</div>
+            </div> 
+            <div class="col-md-3 mt-2">
+                <div class="btn btn-success form-control" id="fadeOUT">Click here for FadeOut</div>
+            </div> 
+            <div class="col-md-3 mt-2">
+                <div class="btn btn-success form-control" id="btnAppend">Click here for Appending new Div</div>
+            </div> 
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3 mt-3" id="divAppending">
+                <div id="div1"><h3 style="text-align: center; align-items: center; color: #fff;">Hello People</h3></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

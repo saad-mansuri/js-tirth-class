@@ -25,8 +25,8 @@ var reader_file = new FileReader() :--
 setTimeout() :-- work only a time based on given timer.
 var timeout = setTimeout(function(){
     ...
+    clearTimeout(timeout)
 },5000)
-clearTimeout(timeout)
 
 
 setInterval() :-- Work as infinit
@@ -47,3 +47,8 @@ Math.ceil() round-up :-- its gives upcoming value from float
 Math.random() :-- genrate random float value.
 
 toLowerCase() : String to lower case
+
+//<td id="qtyPrice" value="10000">10,000</td>
+//Sytex : document.getElementById('Reference-id').getAttribute('value')
+getAttribute : getting value from raference id
+

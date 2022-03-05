@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Prod Qty</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <style>
+        body{
+            height: 120vh;
+            background-image: linear-gradient(#ffafbd,#ffc3a0);
+        }
+        input:focus{
+            box-shadow: none !important;
+        }
+        .td-quantity {
+            width: 100px;
+            border-radius: 0;
+        }
+
+        .plus,
+        .minus {
+            border: 2px solid #ccc;
+            border-left: 0;
+            border-radius: 0;
+        }
+
+        .quantity-text {
+            border: 2px solid #ccc;
+            border-radius: 0;
+        }
+
+        .minus {
+            border: 2px solid #ccc;
+            border-right: 0;
+        }
+        .prod__form{
+            border-radius: 15px;
+            background-image: linear-gradient(#d66d75, #e29587);
+            
+        }
+        .prod__table{
+            background-color: transparent;
+        }
+        .btn-submit{
+            background: linear-gradient(#ffafbd,#ffc3a0);
+            border-radius: 8px;
+            border: #d66d75;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center my-4">
+            <div class="col-md-4 prod__form p-4">
+                <form>
+                    <div class="input-prodname my-3">
+                        <label for="prodName">Product Name</label>
+                        <input type="text" name="prodName" class="form-control" id="prodName" placeholder="Enter Your Name">
+                    </div>
+                    <div class="input-price my-3">
+                        <label for="prodPrice">Product Price</label>
+                        <input type="text" name="prodPrice" class="form-control" id="prodPrice" placeholder="Enter Price">
+                    </div>
+                    <div class="btn-submit my-3">
+                        <input type="submit" name="" id="btnSubmit" class="btn btn-primary btn-submit form-control">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table table-hover table-striped prod__table" id="dispTable">
+                <thead>
+                    <tr>
+                        <th>SR No</th>
+                        <th>Prod Name</th>
+                        <th>Prod Price</th>
+                        <th>Prod Quantity</th>
+                        <th>Sub Total</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tableBody">
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td colspan="5" align="left" valign="center" id="tableTotal">
+                            
+                        </td>
+                    </tr>
+                </tfoot>
+
+                <!-- <tr>
+                    <td>1</td>
+                    <td>Jeans</td>
+                    <td>₹1000</td>
+                    <td>
+                        <div class="quantity buttons_added d-flex">
+                            <input type="button" value="-" class="minus btn" data-ref="txtQty1"
+                                data-price="qtyPrice" id="btnMinus" data-error="error-msg1">
+                            <input type="number" disabled value="0" class="quantity-text text-center" id="txtQty1">
+                            <input type="button" value="+" class="plus btn" data-ref="txtQty1" data-price="qtyPrice"
+                                id="btnPlus" data-error="error-msg1">
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                </tr> -->
+
+                <!-- <tr>
+                    <td>1</td>
+                    <td>Jeans</td>
+                    <td>₹1000</td>
+                    <td>
+                        <div class="quantity buttons_added d-flex">
+                            <input type="button" value="-" class="minus btn" data-ref="txtQty1"
+                                data-price="qtyPrice" id="btnMinus" data-error="error-msg1">
+                            <input type="number" disabled value="0" class="quantity-text text-center" id="txtQty1">
+                            <input type="button" value="+" class="plus btn" data-ref="txtQty1" data-price="qtyPrice"
+                                id="btnPlus" data-error="error-msg1">
+                        </div>
+                    </td>
+                    <td>$1000</td>
+                </tr> -->
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</body>
+
+</html>
