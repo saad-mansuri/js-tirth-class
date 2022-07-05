@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Functions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .pwd-wrap label {
+            margin: 0;
+        }
+
+        .pwd-wrap__pwd-length input {
+            width: 100px;
+        }
+
+        .pwd-wrap__col {
+            border: 1px solid #ccc;
+            padding: 30px 50px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center my-3" id="textCloning">
+            <h1>Random Password Generator</h1>
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-md-5 mt-4 mb-3 pwd-wrap__col">
+                <form>
+                    <div class="pwd-wrap">
+                        <div class="pwd-wrap__text mb-3">
+                            <input type="text" readonly placeholder="Click on Below for Generating Password"
+                                id="txtshowPwd" class="form-control">
+                        </div>
+                        <div class="pwd-wrap__pwd-length mb-3 d-flex justify-content-between align-items-center">
+                            <label for="pwdlength">Password Length</label>
+                            <input type="number" min="6" max="16" value="6" name="pwdlength" id="pwdLength">
+                        </div>
+                        <div class="pwd-wrap__uppercase mb-2 d-flex justify-content-between align-items-center ">
+                            <label for="uppercase">Include Uppercase Latters</label>
+                            <input type="checkbox" class="typecondition" name="uppercase" id="checkedUppercase">
+                        </div>
+                        <div class="pwd-wrap__lowercase mb-2 d-flex justify-content-between align-items-center">
+                            <label for="lowercase">Include Lowercase Latters</label>
+                            <input type="checkbox" class="typecondition" name="lowercase" id="checkedLowercase">
+                        </div>
+                        <div class="pwd-wrap__numbers mb-2 d-flex justify-content-between align-items-center">
+                            <label for="number">Include Numbers</label>
+                            <input type="checkbox" class="typecondition" name="number" id="checkedNumber">
+                        </div>
+                        <div class="pwd-wrap__checkedsymbols mb-4 d-flex justify-content-between align-items-center">
+                            <label for="checkedSymbols">Include Sysmbols</label>
+                            <input type="checkbox" class="typecondition" name="checkedSymbols" id="checkedSymbols">
+                        </div>
+                        <div class="pwd-wrap__checkedsymbols mb-2 d-flex justify-content-between align-items-center">
+                            <div class="btn btn-primary form-control" id="btngeneratPwd">Generate Password</div>
+                            <div class="btn btn-success form-control ml-4" id="btncopyPwd">Copy Password</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

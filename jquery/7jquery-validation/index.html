@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .form__col-1, .form__col-2{
+            width: 47%;
+        }
+        span{
+            color: red;
+        }
+        .form-checked div:nth-child(4), .form-radio div:nth-child(3){
+            height: 20px;
+        }
+        #btnSubmit{
+            width: 40%;
+        }
+        .form-validation{
+            border: 2px solid #ccc; 
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .formError{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center my-3">
+            <h3>Jquery Form Validation</h3>
+        </div>
+
+        <div class="row justify-content-center py-3">
+            <div class="col-md-6">
+                <form class="form-validation">
+                    <div class="d-flex justify-content-between">
+                        <div class="form__col-1">
+                            <div class="form-name">
+                                <label for="txtname">Name <span>*</span></label>
+                                <input type="text" name="txtname" id="txtName" placeholder="please enter your name" class="form-control">
+                                <span class="formError" id="errorName"> please enter your name</span>
+                            </div>
+                            <div class="form-phn my-3">
+                                <label for="txtnum">Phone Number <span>*</span></label>
+                                <input type="text" name="txtnum" id="txtNum" placeholder="please enter your phone number" class="form-control">
+                                <span class="formError" id="errorNumber"> please enter your phone number</span>
+                            </div>
+                            <div class="form-checked my-3">
+                                <div class="mb-1">Select Your Hobbies <span>*</span> </div>
+                                <div class="d-flex align-items-baseline">
+                                    <input type="checkbox" name="checkhobbie" value="Cricket" id="checkhobbie_01" class="mr-1">
+                                    <label for="checkhobbie">Cricket</label>
+                                </div>
+                                <div class="d-flex align-items-baseline">
+                                    <input type="checkbox" name="checkhobbie"  value="Football" id="checkhobbie_02" class="mr-1">
+                                    <label for="checkhobbie">Football</label>
+                                </div>
+                                <div class="d-flex align-items-baseline">
+                                    <input type="checkbox" name="checkhobbie" value="PUBG" id="checkhobbie_03" class="mr-1">
+                                    <label for="checkhobbie">PUBG</label>
+                                </div>
+                                <span class="formError"id="errorHobbie"> please check at least one hobbie</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form__col-2">
+                            <div class="form-email">
+                                <label for="txtemail">Email <span>*</span></label>
+                                <input type="text" name="txtemail" id="txtEmail" placeholder="please enter your name" class="form-control">
+                                <span class="formError" id="errorEmail"> please enter your email</span>
+                            </div>
+                            <div class="form-pwd my-3">
+                                <label for="txtpwd">Password <span>*</span></label>
+                                <input type="password" name="txtpwd" id="txtPwd" placeholder="please enter your password" class="form-control">
+                                <span class="formError" id="errorPwd"> please enter password</span>
+                            </div>
+                            <div class="form-radio my-3">
+                                <div class="mb-1">Select Your Gender <span>*</span></div>
+                                <div class="d-flex align-items-baseline">
+                                    <input type="radio" name="gender" id="radioMale" value="male" class="gender mr-1">
+                                    <label for="radiomale">Male</label>
+                                </div>
+                                <div class="d-flex align-items-baseline">
+                                    <input type="radio" name="gender" id="radioFemale" value="female" class="gender mr-1">
+                                    <label for="radiofemale">Female</label>
+                                </div>
+                                <span class="formError" id="errorGender"> please select at least one </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <input type="submit" class="btn btn-primary" id="btnSubmit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

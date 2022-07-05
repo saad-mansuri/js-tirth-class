@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        #loading-bar-spinner {
+            display: none;
+        }
+        /* #input-fields{
+            display: none;
+        } */
+
+        #loading-bar-spinner.spinner {
+            left: 50%;
+            margin-left: -20px;
+            top: 50%;
+            margin-top: -20px;
+            position: absolute;
+            z-index: 19 !important;
+            animation: loading-bar-spinner 400ms linear infinite;
+        }
+
+        #loading-bar-spinner.spinner .spinner-icon {
+            width: 40px;
+            height: 40px;
+            border: solid 4px transparent;
+            border-top-color: #00C8B1 !important;
+            border-left-color: #00C8B1 !important;
+            border-radius: 50%;
+        }
+
+        @keyframes loading-bar-spinner {
+            0% {
+                transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center my-3">
+            <h3>Create Post Comment</h3>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h5>Please User</h5>
+                <select id="userPost" class="form-control">
+                    <option value="" readonly>Choose User</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row justify-content-around my-5" id="input-fields">
+            <div class="col-md-4">
+                <input type="text" id="txtTitle" placeholder="Enter Post Title" class="form-control mb-3">
+                <textarea name="comment" id="txtComment" placeholder="Enter Post Comment" cols="30" rows="5" class="form-control"></textarea>
+                <div id="btnSubmit" class="btn btn-primary mt-2">Submit</div>
+            </div>
+            <div class="col-md-6" id="displayComments">
+                
+            </div>
+        </div>
+
+
+
+
+
+        <div id="loading-bar-spinner" class="spinner">
+            <div class="spinner-icon">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

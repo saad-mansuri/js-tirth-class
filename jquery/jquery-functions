@@ -1,6 +1,18 @@
-Clone()
+Clone() for creating duplicate div
 Append()
 Hide()
 Show()
 Fadin()
 Fadeout()
+attr() working for all attribute i.e data-name, name
+props() not working in data attribute i.e. data-name
+.val() for getting and displaying value from input values
+document.execCommand() ---> for copy and paste the selected text
+.select() text selecting 
+
+
+
+replace() can replace inner-text of div 
+replaceAll() can replace all same tag to another (i.g. have 3 p tag and these 2 tag can be with b tag and as well contents)
+replaceWith() can replace one tag to another tag. (i.g ypu can replace button tag to div)
+

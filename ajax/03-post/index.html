@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax POST</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .form__col-1,
+        .form__col-2 {
+            width: 47%;
+        }
+
+        .form__col-02 {
+            width: 100%;
+        }
+
+        span {
+            color: red;
+        }
+
+        .form-checked div:nth-child(4),
+        .form-radio div:nth-child(3) {
+            height: 20px;
+        }
+
+        #btnSubmit {
+            width: 40%;
+        }
+
+        .form-validation {
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .formError {
+            display: none;
+        }
+
+        #loading-bar-spinner {
+            display: none;
+        }
+
+        #loading-bar-spinner.spinner {
+            left: 50%;
+            margin-left: -20px;
+            top: 50%;
+            margin-top: -20px;
+            position: absolute;
+            z-index: 19 !important;
+            animation: loading-bar-spinner 400ms linear infinite;
+        }
+
+        #loading-bar-spinner.spinner .spinner-icon {
+            width: 40px;
+            height: 40px;
+            border: solid 4px transparent;
+            border-top-color: #00C8B1 !important;
+            border-left-color: #00C8B1 !important;
+            border-radius: 50%;
+        }
+
+        @keyframes loading-bar-spinner {
+            0% {
+                transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center my-3">
+            <h3>AJAX POST METHOD </h3>
+        </div>
+
+        <div class="row py-3">
+            <div class="col-md-4">
+                <form class="form-validation">
+                    <h3 class="text-center mb-4">Register Here</h3>
+                    <div class="d-flex justify-content-between">
+                        <div class="form__col-1">
+                            <div class="form-name">
+                                <label for="txtname">Name <span>*</span></label>
+                                <input type="text" name="txtname" id="txtName" placeholder="please enter your name"
+                                    class="form-control">
+                            </div>
+                            <div class="form-phn my-3">
+                                <label for="txtnum">Status <span>*</span></label>
+                                <input type="text" name="txtnum" id="txtStatus" placeholder="Your Status"
+                                    class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form__col-2">
+                            <div class="form-email">
+                                <label for="txtemail">Email <span>*</span></label>
+                                <input type="text" name="txtemail" id="txtEmail" placeholder="please enter your email"
+                                    class="form-control">
+                            </div>
+                            <div class="form-radio my-3">
+                                <div class="mb-1">Select Your Gender <span>*</span></div>
+                                <div class="d-flex align-items-baseline">
+                                    <input type="radio" name="gender" id="radioMale" value="male" class="gender mr-1">
+                                    <label for="radiomale">Male</label>
+                                </div>
+                                <div class="d-flex align-items-baseline">
+                                    <input type="radio" name="gender" id="radioFemale" value="female"
+                                        class="gender mr-1">
+                                    <label for="radiofemale">Female</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <input type="submit" class="btn btn-primary" id="btnSubmit" value="Submit">
+                    </div>
+
+                </form>
+
+
+            </div>
+            <div class="col-md-4">
+                <table border="" class="table">
+                    <thead>
+                        <tr border="0">
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Gender</th>
+                            <th>Status</th>
+                            <th>Delete User</th>
+                        </tr>
+                    </thead>
+                    <tbody id="body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- <div id='loader' style='display: none;'>
+        <img src='reload.gif' width='32px' height='32px'>
+      </div> -->
+
+        <div id="loading-bar-spinner" class="spinner">
+            <div class="spinner-icon">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
