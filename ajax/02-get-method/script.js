@@ -12,9 +12,9 @@ function getData(countrydata){
 
 $("#btnClick").on("click", function(){
     $.ajax({
-            url: "http://127.0.0.1:5500/ajax/get-method/ajax.json",
+            url: "ajax.json ",
             type: "get",
-            dataType: "json",
+            dataType: "json",   
             success: function(response){
                 // console.log(response)
                 let countrydata = response.country

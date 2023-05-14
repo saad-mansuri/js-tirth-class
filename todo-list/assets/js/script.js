@@ -73,6 +73,9 @@ function btntaskEdit(e) {
 
     taskTitle.value = taskArr[e]["Title"]
     taskDesc.value = taskArr[e]["Description"]
+    console.log(taskArr[e]);
+    console.log(taskTitle.value);
+    console.log(taskArr[e]["Description"]);
 
     updateIndex = e
 

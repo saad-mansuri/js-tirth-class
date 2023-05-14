@@ -13,7 +13,7 @@ $("#bg-color > div").on("click mouseenter", function (e) {
         'background-color': colorgenRandom
     })
 
-    let allowedArray = ["black", "green"]
+    let allowedArray = ["black", "yellow"]
 
     if (allowedArray.includes(colorgenRandom)) {
         $(e.target).css({

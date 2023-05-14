@@ -9,7 +9,7 @@ function getStoreData(){
         return []
     }
     
-    return myData
+    return myData   
 }
 
 let infoArr = getStoreData()

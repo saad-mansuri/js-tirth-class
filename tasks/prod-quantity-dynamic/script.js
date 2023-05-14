@@ -16,7 +16,7 @@ function submitData(e) {
     let prodPriceVal = prodPrice.value
     // console.log(prodNameVal, prodPriceVal)
     let prodDict = {
-        sr : +new Date,
+        sr : +new Date, //unique timestamp
         pName : prodNameVal,
         pPrice : prodPriceVal
 
@@ -50,7 +50,7 @@ function prodFetch(){
     let btnMinus = document.getElementsByClassName("minus")
     let btnPlus = document.getElementsByClassName("plus")
 
-    btnMinus = [...btnMinus]
+    btnMinus =  btnMinus.toArray()
     btnPlus = [...btnPlus]
 
     btnMinus.forEach(function(v){
@@ -64,14 +64,18 @@ function prodFetch(){
 
 
 function minusQty(e){
+    // console.log(e.target.dataset.ref);
     let minusRef = e.target.dataset.ref
     let minusRefVal = document.getElementById(minusRef)
     // console.log(minusRefVal)
 
-    let priceRef = e.target.dataset.price
+    let priceRef = e.target.dataset.prices
+    // console.log(priceRef);
     let priceRefVal = document.getElementById(priceRef)
+    // console.log(priceRefVal);
 
     let amountRef = e.target.dataset.amount
+    console.log(amountRef);
 
     let qtyVal = minusRefVal.value
     qtyVal--

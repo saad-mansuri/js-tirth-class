@@ -28,7 +28,7 @@ function fetchUser() {
         },
         success: function (res) {
             showData(res)
-        }
+        }   
     })
 }
 
@@ -44,7 +44,7 @@ $("#btnSubmit").on("click", function (e) {
     var form = new FormData()
     form.append("name", nameVal)
     form.append("email", emailVal)
-    form.append("status", statusVal)
+    form.append("status", statusVal)    
     form.append("gender", genderVal)
 
 

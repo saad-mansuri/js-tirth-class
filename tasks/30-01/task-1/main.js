@@ -20,8 +20,11 @@ function filterDate(event) {
     let dateStart = new Date(startDate_value)
     let dateEnd = new Date(endDate_value)
 
+    
+
     let storeStartDate = dateStart.getDate()
     let storeEndDate = dateEnd.getDate()
+    // console.log(storeStartDate, storeEndDate );
 
     let storeStartMonth = dateStart.getMonth()
     let storeStartYear = dateStart.getFullYear()

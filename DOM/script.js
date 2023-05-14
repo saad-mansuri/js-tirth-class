@@ -10,7 +10,8 @@ let displayData = document.getElementById('display_data')
 let a = []
 
 
-submitData.addEventListener("click", function () {
+submitData.addEventListener("click", function (e) {
+    e.preventDefault()
     displayData.innerHTML = ""
     // alert("hello")
     let roll_no = rollNo.value
